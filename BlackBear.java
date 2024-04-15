@@ -26,4 +26,11 @@ public class BlackBear extends Animal {
         System.out.println(this.name + "playing with their siblings ");
     }
 
+    /**
+     * This method represents what a Black Bear is eating
+     */
+    @Override
+    public void eat() {
+        System.out.println(this.name + "eat fishes");
+    }
 }
