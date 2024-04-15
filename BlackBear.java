@@ -23,7 +23,7 @@ public class BlackBear extends Animal {
      */
 	@Override
     public void play() {
-        System.out.println(this.name + "playing with their siblings ");
+        System.out.println(this.name + " is playing with their siblings ");
     }
 
     /**
@@ -31,6 +31,6 @@ public class BlackBear extends Animal {
      */
     @Override
     public void eat() {
-        System.out.println(this.name + "eat fishes");
+        System.out.println(this.name + " eats fishes");
     }
 }
