@@ -5,8 +5,8 @@ public class Elk extends Animal{
     * A constructor that takes in a name.
     *@param name Name of the animal.
     */
-   public Elk(String n){
-      super(n);
+   public Elk(String name){
+      super(name);
    }
 
 
@@ -16,9 +16,15 @@ public class Elk extends Animal{
     */
    public void sound(){
       int soundDeterminant = (int)(Math.random() * 3) + 1;
-      if(soundDeterminant == 1){ System.out.println("Ghwraaheeeeeee"); }
-      else if(soundDeterminant == 2){ System.out.println("Brbrrreeeeeyew"); }
-      else { System.out.println("Grreap eeeereeeeeheeum"); }
+      if(soundDeterminant == 1){ System.out.print("\"Ghwraaheeeeeee,\" "); }
+      else if(soundDeterminant == 2){ System.out.print("\"Brbrrreeeeeyew,\" "); }
+      else { System.out.print("\"Grreap eeeereeeeeheeum,\" "); }
+      
+      soundDeterminant = (int)(Math.random() * 3) + 1;
+      if(soundDeterminant == 1){ System.out.println(super.name + " said enthusiastically."); }
+      else if(soundDeterminant == 2){ System.out.println(super.name + " said sadly."); }
+      else { System.out.println(super.name + " said with suspicion."); }
+
    }
 
 
@@ -39,10 +45,15 @@ public class Elk extends Animal{
     */
    public void eat(){
       int foodDeterminant = (int)(Math.random() * 3) + 1;
-      if(foodDeterminant == 1){ System.out.println(super.name + " ate a bad mushroom and got sick.ad"); }
+      if(foodDeterminant == 1){ System.out.println(super.name + " ate a bad mushroom and got sick."); }
       else if(foodDeterminant == 2){ System.out.println(super.name + " ate some grass."); }
       else { System.out.println(super.name + " ate a weird mushroom and could hear colors."); }
    }
    
+   public static void main(String[] args){
+      Elk testElk = new Elk("Bibi");
+      testElk.sound();
+      testElk.play();
+      testElk.eat();
+   }
 }
-
