@@ -27,9 +27,9 @@ public class Elk extends Animal{
     * that an animal does for fun.
     */
    public void play(){
-      int soundDeterminant = (int)(Math.random() * 3) + 1;
-      if(soundDeterminant == 1){ System.out.println(super.name + " sloshed through a HUGE puddle."); }
-      else if(soundDeterminant == 2){ System.out.println("Overturned a small car."); }
+      int playDeterminant = (int)(Math.random() * 3) + 1;
+      if(playDeterminant == 1){ System.out.println(super.name + " sloshed through a HUGE puddle."); }
+      else if(playDeterminant == 2){ System.out.println("Overturned a small car."); }
       else { System.out.println("Trampled a bear."); }
    }
 
@@ -38,7 +38,11 @@ public class Elk extends Animal{
     * A  method that prints out that the animal is eating food.
     */
    public void eat(){
-      System.out.println(this.name + " eats some food.");
+      int foodDeterminant = (int)(Math.random() * 3) + 1;
+      if(foodDeterminant == 1){ System.out.println(super.name + " ate a bad mushroom and got sick.ad"); }
+      else if(foodDeterminant == 2){ System.out.println(super.name + " ate some grass."); }
+      else { System.out.println(super.name + " ate a weird mushroom and could hear colors."); }
+
    }
 }
 
