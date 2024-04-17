@@ -49,11 +49,4 @@ public class Elk extends Animal{
       else if(foodDeterminant == 2){ System.out.println(super.name + " ate some grass."); }
       else { System.out.println(super.name + " ate a weird mushroom and could hear colors."); }
    }
-   
-   public static void main(String[] args){
-      Elk testElk = new Elk("Bibi");
-      testElk.sound();
-      testElk.play();
-      testElk.eat();
-   }
 }
