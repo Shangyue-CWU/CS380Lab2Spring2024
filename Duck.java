@@ -15,6 +15,13 @@ public class Duck extends Animal {
     public Duck(String name) {
         super(name);
     }
+    /**
+     * Produces the sound of a duck.
+     */
+    @Override
+    public void sound() {
+        System.out.println(this.name + " Says Quack Quack");
+    }
 
    }
 
