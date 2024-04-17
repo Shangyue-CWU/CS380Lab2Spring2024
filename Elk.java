@@ -15,7 +15,7 @@ public class Elk extends Animal{
     * an animal makes.
     */
    public void sound(){
-      int soundDeterminant = (int)((Math.random() + 1) * 3);
+      int soundDeterminant = (int)(Math.random() * 3) + 1;
       if(soundDeterminant == 1){ System.out.println("Ghwraaheeeeeee"); }
       else if(soundDeterminant == 2){ System.out.println("Brbrrreeeeeyew"); }
       else { System.out.println("Grreap eeeereeeeeheeum"); }
@@ -29,8 +29,8 @@ public class Elk extends Animal{
    public void play(){
       int playDeterminant = (int)(Math.random() * 3) + 1;
       if(playDeterminant == 1){ System.out.println(super.name + " sloshed through a HUGE puddle."); }
-      else if(playDeterminant == 2){ System.out.println("Overturned a small car."); }
-      else { System.out.println("Trampled a bear."); }
+      else if(playDeterminant == 2){ System.out.println(super.name + " overturned a small car."); }
+      else { System.out.println(super.name + " trampled a bear."); }
    }
 
 
@@ -42,7 +42,7 @@ public class Elk extends Animal{
       if(foodDeterminant == 1){ System.out.println(super.name + " ate a bad mushroom and got sick.ad"); }
       else if(foodDeterminant == 2){ System.out.println(super.name + " ate some grass."); }
       else { System.out.println(super.name + " ate a weird mushroom and could hear colors."); }
-
    }
+   
 }
 
