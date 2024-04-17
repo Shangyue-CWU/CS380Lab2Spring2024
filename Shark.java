@@ -50,14 +50,5 @@ public class Shark extends Animal{
     public void jaws(){
         System.out.println(this.name + " attacks a person on a boat!");
     }
-
-    public static void main(String[] args) {
-        Shark realShark = new Shark("Shark King");
-        realShark.eat();
-        realShark.play();
-        realShark.sound();
-        realShark.jaws();
-        realShark.swim();
-    }
 }
 
