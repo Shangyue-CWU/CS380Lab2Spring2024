@@ -22,6 +22,12 @@ public class Duck extends Animal {
     public void sound() {
         System.out.println(this.name + " Says Quack Quack");
     }
-
+    /**
+     * Simulates a duck playing.
+     */
+    @Override
+    public void play() {
+        System.out.println(this.name + " is playing");
+    }
    }
 
