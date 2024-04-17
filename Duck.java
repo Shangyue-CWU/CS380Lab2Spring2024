@@ -29,5 +29,14 @@ public class Duck extends Animal {
     public void play() {
         System.out.println(this.name + " is playing");
     }
-   }
+     /**
+     * Simulates a duck eating.
+     */
+    @Override
+    public void eat() {
+        System.out.println(this.name + " eats some food.");
+    }
+}
+
+  
 
