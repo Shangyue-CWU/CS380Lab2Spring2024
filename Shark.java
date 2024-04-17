@@ -36,4 +36,11 @@ public class Shark extends Animal{
     public void eat(){
         System.out.println(this.name + " eats fish and other sea mammals like dolphins and seals.");
     }
+
+    /**
+     * A method for a Shark swimming.
+     */
+    public void swim(){
+        System.out.println(this.name + " swims away into the ocean deep.");
+    }
 }
