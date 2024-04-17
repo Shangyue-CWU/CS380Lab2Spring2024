@@ -1,3 +1,7 @@
+/**
+ * Shark class with various behavior methods.
+ * @author Telmen Enkhtuvshin
+ */
 public class Shark extends Animal{
 
     /**
@@ -23,5 +27,13 @@ public class Shark extends Animal{
     @Override
     public void play() {
         System.out.println(this.name + " plays with other sharks, remora fish, pilot fish, and rarely humans too.");
+    }
+
+    /**
+     * A method for showing what the Shark eats.
+     */
+    @Override
+    public void eat(){
+        System.out.println(this.name + " eats fish and other sea mammals like dolphins and seals.");
     }
 }
