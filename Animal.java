@@ -3,6 +3,9 @@
  *will have to override all of the abstract methods.
  *@author Shangyue Zhu.
  */
+
+package CS380Lab2Spring2024;
+
 public abstract class Animal{
 
 
